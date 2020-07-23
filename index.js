@@ -1,4 +1,3 @@
-var tldExtractor = require('./lib/tldExtractor');
 var AWS = require('aws-sdk');
 let fs = require("fs");
 let path = require("path");
@@ -7,7 +6,7 @@ AWS.config.update({region: 'us-east-1'});
 var s3 = new AWS.S3();
 let TLDS = undefined;
 
-var BUCKET_NAME = process.env.BUCKET_NAME || 'www.zeer0.com';
+const BUCKET_NAME = process.env.BUCKET_NAME || 'www.zeer0.com';
 const PSL_FILE_KEY = process.env.PSL_FILE_KEY || "mozilla-psl.dat";
 
 let readFileAsync = async (filename) => {
@@ -36,7 +35,6 @@ let readFileAsync = async (filename) => {
 };
 
 exports.getTldOfDomain = async (domain) => {
-    // TODO implement
     return await readFileAsync(PSL_FILE_KEY)
         .then(tlds => {
             //drop comments and empty lines
