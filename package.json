@@ -1,0 +1,29 @@
+{
+  "name": "zeer0-repo",
+  "version": "0.0.1",
+  "description": "zeer0 specific utils",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiorama/zeer0-repo.git"
+  },
+  "keywords": [
+    "nodejs",
+    "zeer0",
+    "lambda",
+    "aws",
+    "utilities"
+  ],
+  "author": "Sai Ramachandran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saiorama/zeer0-repo/issues"
+  },
+  "homepage": "https://github.com/saiorama/zeer0-repo#readme"
+}
